@@ -1,0 +1,14 @@
+# Claves y certificados privados: nunca al repositorio (el .cer público sí se publica)
+*.pfx
+*.p12
+*.key
+*.pem
+
+# Registros de ejecución y del servidor de decisiones de diseño
+*.log
+.impeccable/questions/*.log
+
+# Archivos temporales
+*.tmp
+Thumbs.db
+desktop.ini

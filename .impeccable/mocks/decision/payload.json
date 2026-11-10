@@ -1,0 +1,120 @@
+{
+  "title": "Elige el mundo visual de WinTurbo",
+  "question": "La tirada asignó «Cinta rotuladora del técnico». Quédatela, elige una alternativa o vuelve a tirar.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Cinta rotuladora del técnico",
+      "kicker": "THE ROLL",
+      "lineage": "Cinta rotuladora en relieve (tipo Dymo) con la que los técnicos etiquetan equipos, cables y discos",
+      "thesis": "Cada cambio queda etiquetado como el técnico rotula un equipo: una cinta de color pegada sobre lo que tocó.",
+      "palette": ["#16181D", "#F4F1EA", "#1F6FEB", "#2EA043", "#D29922", "#DA3633"],
+      "materials": ["cinta de plástico brillante con letra blanca en relieve", "etiqueta adhesiva sobre carcasa gris"],
+      "viewport": "Barra lateral grafito con navegación estándar. Panel con la ficha del equipo, métricas antes/después y cintas de color que marcan lo ya aplicado. Botón principal «Optimizar».",
+      "risk": "Si las cintas se usan como decoración y no solo para marcar estado, el producto parece un juguete.",
+      "raised": [
+        { "from": "challenger-ikeda", "raise": "Todas las cifras van en números tabulares, alineadas a la derecha en columnas que no bailan." },
+        { "from": "challenger-saville", "raise": "Cada cambio aplicado lleva un número de diario correlativo (#0142) que se ve en la cinta y en Deshacer." },
+        { "from": "challenger-zoo", "raise": "La carcasa usa solo campos de color planos: sin degradados ni sombras difusas." },
+        { "from": "challenger-doujin", "raise": "Densidad sin miedo: los 36 ajustes caben en dos pantallas, una línea por ajuste." },
+        { "from": "challenger-laban", "raise": "Antes y después siempre en columnas espejo, a ambos lados de un eje fijo." },
+        { "from": "challenger-jcard", "raise": "Cada acción declara su duración estimada y la selección suma su total, como una cara de casete." }
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "Informe de analítica clínica",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Hojas de resultados de laboratorio: valor, unidad e intervalo de referencia, con las cifras fuera de rango marcadas",
+      "thesis": "El equipo como un paciente: cada métrica con su intervalo sano y el antes y el después marcados.",
+      "palette": ["#FFFFFF", "#0B3D5C", "#E7EEF3", "#C2410C", "#15803D"],
+      "materials": ["papel de informe con cuadrícula fina", "barras de intervalo de referencia"],
+      "viewport": "Cabecera azul petróleo con el equipo como «paciente». Tabla de métricas con barras de rango sano y valores fuera de rango marcados en naranja.",
+      "risk": "Es la dirección más cercana a un panel de salud genérico; puede parecer otra app médica.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-ikeda", "kind": "challenger", "catalogId": "ikeda-datamatics",
+      "label": "Datamatics", "verdict": "declined",
+      "lineage": "Campos de datos en blanco y negro puro",
+      "thesis": "La salud del sistema como un campo de barras de código.",
+      "palette": ["#000000", "#FFFFFF"], "materials": ["barras de un píxel", "números monoespaciados"],
+      "viewport": "Un muro de barras con las métricas en el margen.",
+      "case": "Pierde en identificación y en claridad: un técnico con el cliente al lado necesita estados legibles, no un campo estroboscópico.",
+      "risk": "Ilegible para el cliente y agresivo a la vista.",
+      "kept": "Cifras tabulares alineadas en columnas estrictas."
+    },
+    {
+      "id": "challenger-saville", "kind": "challenger", "catalogId": "brand-identity-canon-saville-catalog-sleeve",
+      "label": "Catálogo Factory", "verdict": "declined",
+      "lineage": "Identidad de catálogo con número de referencia para todo",
+      "thesis": "Cada cambio como una referencia de catálogo.",
+      "palette": ["#111111", "#FFFFFF", "#E4572E", "#29335C"], "materials": ["negro mate", "trazo blanco fino"],
+      "viewport": "Índice numerado de cambios sobre negro.",
+      "case": "Pierde en claridad: los códigos de color en lugar de palabras esconden el riesgo de cada ajuste.",
+      "risk": "Críptico para quien no conoce el código.",
+      "kept": "Numeración correlativa de cada cambio en el diario."
+    },
+    {
+      "id": "challenger-zoo", "kind": "challenger", "catalogId": "aww2-zoo-gardens-guide-map",
+      "label": "Mapa de zoológico", "verdict": "declined",
+      "lineage": "Mapa guía con zonas de color plano",
+      "thesis": "Las secciones como zonas de un mapa.",
+      "palette": ["#8ED462", "#F5F1E4", "#2C2E2A", "#F5E211", "#FF705D"], "materials": ["color plano sin grano"],
+      "viewport": "Una zona de color dominando cada pantalla.",
+      "case": "Pierde en ambos ejes: tono de ocio que no encaja con una herramienta de sistema.",
+      "risk": "Infantil para un técnico.",
+      "kept": "Compromiso con campos de color planos."
+    },
+    {
+      "id": "challenger-doujin", "kind": "challenger", "catalogId": "pop-culture-shelf-doujin-event-catalog",
+      "label": "Catálogo de convención", "verdict": "declined",
+      "lineage": "Catálogo denso de miniaturas numeradas",
+      "thesis": "Todos los ajustes como celdas de una cuadrícula densa.",
+      "palette": ["#1A1A1A", "#E9E6DF", "#2F6FDB"], "materials": ["papel prensa", "tinta única"],
+      "viewport": "Cuadrícula de celdas numeradas con las elegidas rodeadas.",
+      "case": "Pierde en claridad: celdas sin descripción esconden qué hace cada ajuste.",
+      "risk": "Ruido visual con muchos elementos.",
+      "kept": "Coraje con la densidad: mucho visible por pantalla."
+    },
+    {
+      "id": "challenger-laban", "kind": "challenger", "catalogId": "notation-diagram-systems-labanotation",
+      "label": "Labanotación", "verdict": "declined",
+      "lineage": "Partitura de danza con pentagrama central",
+      "thesis": "El equipo leído como una partitura simétrica.",
+      "palette": ["#FFFFFF", "#000000", "#BDBDBD"], "materials": ["papel de partitura", "bloques sombreados"],
+      "viewport": "Eje central con columnas a ambos lados.",
+      "case": "Pierde en ambos ejes: notación ajena al técnico.",
+      "risk": "Requiere aprender a leerla.",
+      "kept": "Simetría estricta: antes y después en columnas espejo."
+    },
+    {
+      "id": "challenger-jcard", "kind": "challenger", "catalogId": "vernacular-ephemera-cassette-j-card",
+      "label": "Carátula de casete", "verdict": "declined",
+      "lineage": "Carátula de cinta con cara A y cara B cronometradas",
+      "thesis": "Cada sesión de mantenimiento como una cinta con tiempo limitado.",
+      "palette": ["#FFFFFF", "#1F3A93", "#C0392B", "#9E9E9E"], "materials": ["cartulina pautada", "bolígrafo azul"],
+      "viewport": "Lista manuscrita con tiempos a la derecha.",
+      "case": "Pierde en ambos ejes: nostalgia sin relación con el trabajo.",
+      "risk": "Informal para un producto de sistema.",
+      "kept": "Presupuesto de tiempo: duración estimada por acción y total."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code" },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "El estándar de la categoría",
+    "thesis": "Una utilidad de Windows 11 con Fluent: limpia, conocida, impecable.",
+    "palette": ["#F3F3F3", "#FFFFFF", "#1B1B1B", "#005FB8"],
+    "materials": ["Mica", "tarjetas de Fluent"],
+    "viewport": "Navegación lateral de Fluent, tarjetas blancas y el acento azul del sistema.",
+    "risk": "Indistinguible de PC Manager y de cualquier optimizador.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}

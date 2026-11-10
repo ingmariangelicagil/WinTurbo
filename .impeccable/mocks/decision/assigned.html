@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>WinTurbo · Cinta rotuladora</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font-family:"Segoe UI",system-ui,sans-serif;background:#F4F1EA;color:#16181D;display:grid;grid-template-columns:232px 1fr;grid-template-rows:1fr 168px}
+.rail{grid-row:1/3;background:#16181D;color:#C9CCD3;padding:22px 14px;display:flex;flex-direction:column;gap:4px}
+.brand{display:flex;align-items:center;gap:10px;margin:0 6px 26px}
+.tape{display:inline-block;font-family:Bahnschrift,"DIN Alternate",sans-serif;font-stretch:condensed;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#fff;padding:3px 9px 2px;border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(0,0,0,.25);font-size:12px;line-height:16px}
+.t-blue{background:#1F6FEB}.t-green{background:#2EA043}.t-amber{background:#D29922;color:#16181D}.t-red{background:#DA3633}.t-black{background:#2B2F37}
+.brand .tape{font-size:15px;padding:5px 11px}
+.nav a{display:flex;justify-content:space-between;padding:9px 12px;border-radius:6px;color:#C9CCD3;text-decoration:none;font-size:14px}
+.nav a.on{background:#2B2F37;color:#fff;box-shadow:inset 3px 0 0 #1F6FEB}
+.nav small{color:#7D828C;font-variant-numeric:tabular-nums}
+.sim{margin-top:auto;border-top:1px solid #2B2F37;padding:14px 8px 0;font-size:13px;display:flex;justify-content:space-between}
+.main{padding:26px 34px 18px;overflow:hidden}
+.head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px}
+h1{font-size:26px;font-weight:600;letter-spacing:-.01em}
+.sub{color:#5B606B;font-size:14px;margin-top:4px}
+.btn{font:600 14px "Segoe UI";border-radius:6px;padding:10px 18px;border:1px solid #16181D;background:#fff;color:#16181D}
+.btn.pri{background:#1F6FEB;border-color:#1F6FEB;color:#fff}
+.grid{display:grid;grid-template-columns:380px 1fr;gap:22px}
+.card{background:#fff;border:1px solid #DEDAD0;border-radius:8px;padding:18px 20px}
+.card h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#5B606B;margin-bottom:12px;font-weight:600}
+dl{display:grid;grid-template-columns:96px 1fr;row-gap:9px;font-size:14px}
+dt{color:#5B606B}
+.mirror{display:grid;grid-template-columns:1fr 110px 2px 110px 70px;align-items:center;font-size:14px;font-variant-numeric:tabular-nums}
+.mirror div{padding:8px 0;border-bottom:1px solid #EFECE4}
+.mirror .ax{background:#16181D;padding:0;align-self:stretch;border:0}
+.mirror .b{text-align:right;padding-right:16px;color:#5B606B}.mirror .a{padding-left:16px;font-weight:600}
+.mirror .d{text-align:right;color:#2EA043;font-weight:600}.mirror .d.w{color:#B7791F}
+.mirror .h{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#7D828C}
+.presets{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+.preset{background:#fff;border:1px solid #DEDAD0;border-radius:8px;padding:14px 16px}
+.preset.on{border:2px solid #1F6FEB;padding:13px 15px}
+.preset b{font-size:16px;display:block;margin-bottom:6px}
+.preset p{font-size:13px;color:#5B606B;line-height:1.35;height:36px}
+.preset .meta{display:flex;justify-content:space-between;margin-top:10px;font-size:12px;color:#5B606B;font-variant-numeric:tabular-nums}
+.log{grid-column:2;background:#1C1F25;color:#C9CCD3;padding:14px 34px;font:13px/1.65 Consolas,monospace;display:grid;grid-template-columns:1fr 360px;gap:30px}
+.log .ok{color:#56D364}.log .w{color:#E3B341}
+.bar{height:6px;background:#2B2F37;border-radius:3px;margin:10px 0 8px}.bar i{display:block;height:100%;width:62%;background:#1F6FEB;border-radius:3px}
+.applied{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+</style></head><body>
+<aside class="rail">
+ <div class="brand"><span class="tape t-blue">WinTurbo</span><small style="color:#7D828C">1.1</small></div>
+ <nav class="nav">
+  <a class="on">Panel</a><a>Ajustes <small>36</small></a><a>Bloatware <small>14</small></a><a>Programas de inicio <small>9</small></a>
+  <a>Limpieza</a><a>Mantenimiento</a><a>Red y DNS</a><a>Windows Update</a><a>Apps</a><a>Deshacer <small>3</small></a>
+ </nav>
+ <div class="sim"><span>Modo simulación</span><span class="tape t-black">No</span></div>
+</aside>
+<main class="main">
+ <div class="head"><div><h1>LAPTOP-MG7520 · Windows 11 Home 26H2</h1><div class="sub">Línea base del 09/11/2026 · último arranque 41,2 s</div></div>
+  <div style="display:flex;gap:10px"><button class="btn">Guardar informe</button><button class="btn pri">Optimizar · Equilibrado</button></div></div>
+ <div class="grid">
+  <section class="card"><h2>Equipo</h2>
+   <dl><dt>CPU</dt><dd>AMD Ryzen 5 7520U · 4 núcleos / 8 hilos</dd><dt>RAM</dt><dd>8 GB</dd><dt>GPU</dt><dd>AMD Radeon Graphics</dd><dt>Disco</dt><dd>SSD NVMe · 298,9 GB libres</dd><dt>Tipo</dt><dd>Portátil</dd></dl>
+   <div class="applied"><span class="tape t-green">#0141 Telemetría</span><span class="tape t-green">#0142 WPBT</span><span class="tape t-amber">#0143 Copilot</span><span class="tape t-red">WU bloqueado</span></div>
+  </section>
+  <section class="card"><h2>Antes · después</h2>
+   <div class="mirror">
+    <div class="h">Métrica</div><div class="h b">Línea base</div><div class="ax"></div><div class="h a">Ahora</div><div class="h d">Δ</div>
+    <div>Tiempo de arranque</div><div class="b">58,4 s</div><div class="ax"></div><div class="a">41,2 s</div><div class="d">−29 %</div>
+    <div>RAM usada</div><div class="b">82,7 %</div><div class="ax"></div><div class="a">61,0 %</div><div class="d">−22 pts</div>
+    <div>Procesos</div><div class="b">211</div><div class="ax"></div><div class="a">164</div><div class="d">−47</div>
+    <div>Servicios activos</div><div class="b">124</div><div class="ax"></div><div class="a">109</div><div class="d">−15</div>
+    <div>Apps de inicio</div><div class="b">9</div><div class="ax"></div><div class="a">4</div><div class="d">−5</div>
+    <div>Espacio libre</div><div class="b">298,9 GB</div><div class="ax"></div><div class="a">305,1 GB</div><div class="d">+6,2</div>
+   </div>
+  </section>
+ </div>
+ <div class="presets">
+  <div class="preset"><b>Básico</b><p>Privacidad y anuncios. Seguro para equipos de trabajo.</p><div class="meta"><span>9 ajustes</span><span>≈ 1 min</span></div></div>
+  <div class="preset on"><b>Equilibrado</b><p>Privacidad y rendimiento sin perder funciones.</p><div class="meta"><span>18 ajustes · 2 omitidos</span><span>≈ 2 min</span></div></div>
+  <div class="preset"><b>Gaming</b><p>HAGS, prioridad a juegos, ratón sin aceleración.</p><div class="meta"><span>24 ajustes</span><span>≈ 3 min</span></div></div>
+  <div class="preset"><b>Máximo</b><p>Todo, incluidos ajustes avanzados.</p><div class="meta"><span>28 ajustes</span><span>≈ 4 min</span></div></div>
+ </div>
+</main>
+<footer class="log">
+ <div><span class="ok">+ Historial de actividad - Desactivar</span><br><span class="ok">+ Anuncios, sugerencias y apps promocionadas</span><br><span class="w">! Omitido (solo sobremesa): Plan de energía Alto rendimiento</span><br>&gt; Aplicando: Retraso artificial de apps de inicio…</div>
+ <div>Aplicando preset Equilibrado · 11 de 18<div class="bar"><i></i></div>Respaldo: respaldo-20261109-170212-418.json</div>
+</footer>
+</body></html>

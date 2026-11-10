@@ -1,0 +1,7 @@
+# WinTurbo.ps1 está firmado (Authenticode): cualquier cambio de saltos de línea invalida la firma
+# y además el .exe embebe su hash exacto. Se guarda y se descarga byte a byte.
+WinTurbo.ps1 -text
+*.exe binary
+*.cer binary
+*.ico binary
+*.png binary

@@ -1,0 +1,1412 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T22:49:05+00:00",
+  "title": "Design System: WinTurbo",
+  "platform": {
+    "kind": "native-desktop",
+    "toolkit": "WPF (XAML embebido en Windows PowerShell 5.1)",
+    "units": "píxeles independientes del dispositivo (1/96 in)",
+    "fonts": "solo de sistema: distribución en un único archivo"
+  },
+  "tokens": {
+    "_note": "Copia exacta del frontmatter de DESIGN.md, que es normativo.",
+    "colors": {
+      "azul-senal": "#1F6FEB",
+      "azul-senal-hover": "#1A5FCC",
+      "azul-senal-pulsado": "#164FA8",
+      "azul-foco": "#0B3D91",
+      "azul-seleccion": "#E8F0FD",
+      "cinta-verde": "#1A7F37",
+      "cinta-ambar": "#D29922",
+      "cinta-roja": "#C42B2B",
+      "cinta-negra": "#2B2F37",
+      "cinta-gris": "#6B717C",
+      "cinta-brillo": "#FFFFFF40",
+      "texto-peligro": "#B42318",
+      "lavado-peligro": "#FDECEC",
+      "texto-aviso": "#9A6700",
+      "aviso-fondo": "#FFF6DD",
+      "aviso-trazo": "#D29922",
+      "aviso-tinta": "#5C4400",
+      "grafito-riel": "#16181D",
+      "riel-hover": "#22262D",
+      "riel-activo": "#2B2F37",
+      "riel-texto": "#C9CCD3",
+      "riel-tenue": "#8A8F99",
+      "riel-trazo": "#6B717C",
+      "carcasa": "#E9EBEE",
+      "superficie": "#FFFFFF",
+      "trazo-superficie": "#D5D8DE",
+      "divisor": "#ECEEF1",
+      "lavado-hover": "#F1F3F5",
+      "lavado-pulsado": "#E4E7EB",
+      "tinta": "#16181D",
+      "tinta-secundaria": "#565C67",
+      "tinta-deshabilitada": "#5B616B",
+      "tinta-no-aplica": "#6B717C",
+      "trazo-boton": "#A9AEB8",
+      "trazo-control": "#7D828C",
+      "pulgar-scroll": "#9EA4AE",
+      "registro-fondo": "#1C1F25",
+      "registro-texto": "#C9CCD3",
+      "registro-claro": "#F0F3F6",
+      "registro-estado": "#A9AEB8",
+      "registro-tenue": "#8A8F99",
+      "registro-verde": "#56D364",
+      "registro-amarillo": "#E3B341",
+      "registro-rojo": "#FF7B72",
+      "registro-cian": "#79C0FF",
+      "registro-azul": "#58A6FF",
+      "registro-ambar": "#D29922"
+    },
+    "typography": {
+      "headline": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "24px",
+        "fontWeight": 600
+      },
+      "subtitle": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "13.5px",
+        "fontWeight": 400
+      },
+      "title": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 600
+      },
+      "section": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": 600
+      },
+      "category": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 600
+      },
+      "body": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400
+      },
+      "body-strong": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 600
+      },
+      "body-secondary": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400
+      },
+      "meta": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "12.5px",
+        "fontWeight": 400
+      },
+      "caption": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400
+      },
+      "numeric": {
+        "fontFamily": "Segoe UI, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "fontFeature": "tnum"
+      },
+      "tape-label": {
+        "fontFamily": "Bahnschrift SemiBold Condensed, Bahnschrift, Segoe UI, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": 600,
+        "letterSpacing": "0.1em"
+      },
+      "tape-label-panel": {
+        "fontFamily": "Bahnschrift SemiBold Condensed, Bahnschrift, Segoe UI, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 600,
+        "letterSpacing": "0.1em"
+      },
+      "tape-brand": {
+        "fontFamily": "Bahnschrift SemiBold Condensed, Bahnschrift, Segoe UI, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": 600,
+        "letterSpacing": "0.1em"
+      },
+      "mono": {
+        "fontFamily": "Consolas, monospace",
+        "fontSize": "12.5px",
+        "fontWeight": 400
+      },
+      "icon": {
+        "fontFamily": "Segoe Fluent Icons, Segoe MDL2 Assets",
+        "fontSize": "16px",
+        "fontWeight": 400
+      }
+    },
+    "rounded": {
+      "tape": "2px",
+      "check": "3px",
+      "row": "4px",
+      "control": "6px",
+      "surface": "8px",
+      "pill": "10px"
+    },
+    "spacing": {
+      "2": "2px",
+      "6": "6px",
+      "8": "8px",
+      "10": "10px",
+      "12": "12px",
+      "14": "14px",
+      "16": "16px",
+      "20": "20px",
+      "24": "24px",
+      "28": "28px",
+      "32": "32px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.azul-senal}",
+        "textColor": "{colors.superficie}",
+        "typography": "{typography.body-strong}",
+        "rounded": "{rounded.control}",
+        "padding": "7px 14px"
+      },
+      "button-primary-hover": {
+        "backgroundColor": "{colors.azul-senal-hover}"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.azul-senal-pulsado}"
+      },
+      "button-primary-disabled": {
+        "backgroundColor": "{colors.carcasa}",
+        "textColor": "{colors.tinta-deshabilitada}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.superficie}",
+        "textColor": "{colors.tinta}",
+        "typography": "{typography.body-strong}",
+        "rounded": "{rounded.control}",
+        "padding": "7px 14px"
+      },
+      "button-secondary-hover": {
+        "backgroundColor": "{colors.lavado-hover}"
+      },
+      "button-secondary-pressed": {
+        "backgroundColor": "{colors.lavado-pulsado}"
+      },
+      "button-secondary-disabled": {
+        "backgroundColor": "{colors.lavado-hover}",
+        "textColor": "{colors.tinta-deshabilitada}"
+      },
+      "button-danger": {
+        "backgroundColor": "{colors.superficie}",
+        "textColor": "{colors.texto-peligro}",
+        "typography": "{typography.body-strong}",
+        "rounded": "{rounded.control}",
+        "padding": "7px 14px"
+      },
+      "button-danger-hover": {
+        "backgroundColor": "{colors.lavado-peligro}"
+      },
+      "surface": {
+        "backgroundColor": "{colors.superficie}",
+        "rounded": "{rounded.surface}",
+        "padding": "16px 20px"
+      },
+      "preset-card": {
+        "backgroundColor": "{colors.superficie}",
+        "rounded": "{rounded.surface}",
+        "padding": "14px 16px"
+      },
+      "warning-banner": {
+        "backgroundColor": "{colors.aviso-fondo}",
+        "textColor": "{colors.aviso-tinta}",
+        "rounded": "{rounded.surface}",
+        "padding": "12px 16px"
+      },
+      "nav-item": {
+        "textColor": "{colors.riel-texto}",
+        "typography": "{typography.body}",
+        "rounded": "{rounded.control}",
+        "padding": "8px 10px 8px 8px"
+      },
+      "nav-item-hover": {
+        "backgroundColor": "{colors.riel-hover}"
+      },
+      "nav-item-active": {
+        "backgroundColor": "{colors.riel-activo}",
+        "textColor": "{colors.superficie}"
+      },
+      "sim-switch": {
+        "backgroundColor": "{colors.riel-activo}",
+        "rounded": "{rounded.pill}",
+        "width": "38px",
+        "height": "20px"
+      },
+      "sim-switch-on": {
+        "backgroundColor": "{colors.azul-senal}"
+      },
+      "checkbox": {
+        "backgroundColor": "{colors.superficie}",
+        "rounded": "{rounded.check}",
+        "size": "18px"
+      },
+      "checkbox-checked": {
+        "backgroundColor": "{colors.azul-senal}"
+      },
+      "list-row": {
+        "padding": "4px",
+        "height": "34px"
+      },
+      "list-row-hover": {
+        "backgroundColor": "{colors.lavado-hover}",
+        "rounded": "{rounded.row}"
+      },
+      "list-row-selected": {
+        "backgroundColor": "{colors.azul-seleccion}",
+        "rounded": "{rounded.row}"
+      },
+      "tape-green": {
+        "backgroundColor": "{colors.cinta-verde}",
+        "textColor": "{colors.superficie}",
+        "typography": "{typography.tape-label}",
+        "rounded": "{rounded.tape}",
+        "padding": "2px 7px"
+      },
+      "tape-amber": {
+        "backgroundColor": "{colors.cinta-ambar}",
+        "textColor": "{colors.tinta}",
+        "typography": "{typography.tape-label}",
+        "rounded": "{rounded.tape}",
+        "padding": "2px 7px"
+      },
+      "tape-red": {
+        "backgroundColor": "{colors.cinta-roja}",
+        "textColor": "{colors.superficie}",
+        "typography": "{typography.tape-label}",
+        "rounded": "{rounded.tape}",
+        "padding": "2px 7px"
+      },
+      "tape-black": {
+        "backgroundColor": "{colors.cinta-negra}",
+        "textColor": "{colors.superficie}",
+        "typography": "{typography.tape-label}",
+        "rounded": "{rounded.tape}",
+        "padding": "2px 7px"
+      },
+      "tape-grey": {
+        "backgroundColor": "{colors.cinta-gris}",
+        "textColor": "{colors.superficie}",
+        "typography": "{typography.tape-label}",
+        "rounded": "{rounded.tape}",
+        "padding": "2px 7px"
+      },
+      "tape-blue": {
+        "backgroundColor": "{colors.azul-senal}",
+        "textColor": "{colors.superficie}",
+        "typography": "{typography.tape-label}",
+        "rounded": "{rounded.tape}",
+        "padding": "2px 7px"
+      },
+      "tape-brand": {
+        "backgroundColor": "{colors.azul-senal}",
+        "textColor": "{colors.superficie}",
+        "typography": "{typography.tape-brand}",
+        "rounded": "{rounded.tape}",
+        "padding": "4px 10px"
+      },
+      "mirror-axis": {
+        "backgroundColor": "{colors.tinta}",
+        "width": "2px"
+      },
+      "log-panel": {
+        "backgroundColor": "{colors.registro-fondo}",
+        "textColor": "{colors.registro-texto}",
+        "typography": "{typography.mono}",
+        "padding": "12px 24px",
+        "height": "150px"
+      },
+      "log-panel-collapsed": {
+        "height": "64px"
+      },
+      "progress-bar": {
+        "backgroundColor": "{colors.riel-activo}",
+        "rounded": "{rounded.check}",
+        "height": "6px"
+      },
+      "progress-indicator": {
+        "backgroundColor": "{colors.azul-senal}",
+        "rounded": "{rounded.check}"
+      },
+      "scrollbar-thumb": {
+        "backgroundColor": "{colors.pulgar-scroll}",
+        "rounded": "{rounded.row}",
+        "width": "10px"
+      }
+    }
+  },
+  "extensions": {
+    "colorMeta": {
+      "azul-senal": {
+        "role": "primary",
+        "displayName": "Azul señal",
+        "canonical": "#1F6FEB",
+        "oklch": "oklch(56.9% 0.202 260)",
+        "tonalRamp": [
+          "#000039",
+          "#001E59",
+          "#02398A",
+          "#0855C4",
+          "#2776F2",
+          "#619DFF",
+          "#A9C9FC",
+          "#E6EFFF"
+        ]
+      },
+      "azul-senal-hover": {
+        "role": "primary",
+        "displayName": "Azul señal hover",
+        "canonical": "#1A5FCC",
+        "oklch": "oklch(51.0% 0.182 260)",
+        "tonalRamp": [
+          "#00003C",
+          "#001F58",
+          "#00388F",
+          "#0E55C2",
+          "#3478E7",
+          "#639DFD",
+          "#A9C9FB",
+          "#E6EFFE"
+        ]
+      },
+      "azul-senal-pulsado": {
+        "role": "primary",
+        "displayName": "Azul señal pulsado",
+        "canonical": "#164FA8",
+        "oklch": "oklch(44.7% 0.155 260)",
+        "tonalRamp": [
+          "#00003C",
+          "#001F58",
+          "#043A89",
+          "#2159B3",
+          "#417BD8",
+          "#629DFD",
+          "#A9C9FC",
+          "#E6EFFE"
+        ]
+      },
+      "azul-foco": {
+        "role": "primary",
+        "displayName": "Azul de foco profundo",
+        "canonical": "#0B3D91",
+        "oklch": "oklch(38.6% 0.148 261)",
+        "tonalRamp": [
+          "#00003A",
+          "#001D5A",
+          "#06388C",
+          "#2859B0",
+          "#477BD4",
+          "#679DFA",
+          "#A9C9FE",
+          "#E6EFFF"
+        ]
+      },
+      "azul-seleccion": {
+        "role": "primary",
+        "displayName": "Lavado azul de selección",
+        "canonical": "#E8F0FD",
+        "oklch": "oklch(95.3% 0.019 260)",
+        "tonalRamp": [
+          "#070B13",
+          "#1F242E",
+          "#3A404A",
+          "#575E69",
+          "#777E89",
+          "#979FAB",
+          "#C0C8D4",
+          "#E7EFFC"
+        ]
+      },
+      "cinta-verde": {
+        "role": "secondary",
+        "displayName": "Verde aplicado",
+        "canonical": "#1A7F37",
+        "oklch": "oklch(52.4% 0.140 148)",
+        "tonalRamp": [
+          "#001100",
+          "#002E0B",
+          "#004E1A",
+          "#00722A",
+          "#34934A",
+          "#59B66B",
+          "#84E093",
+          "#C8FFCF"
+        ]
+      },
+      "cinta-ambar": {
+        "role": "secondary",
+        "displayName": "Ámbar moderado",
+        "canonical": "#D29922",
+        "oklch": "oklch(72.0% 0.140 80)",
+        "tonalRamp": [
+          "#140800",
+          "#322000",
+          "#553A00",
+          "#7B5600",
+          "#A2740E",
+          "#CC9316",
+          "#F7BC50",
+          "#FEECCE"
+        ]
+      },
+      "cinta-roja": {
+        "role": "secondary",
+        "displayName": "Rojo avanzado",
+        "canonical": "#C42B2B",
+        "oklch": "oklch(53.8% 0.189 26)",
+        "tonalRamp": [
+          "#230000",
+          "#4B0004",
+          "#7B040D",
+          "#B00D18",
+          "#D73F3B",
+          "#FE655C",
+          "#FCB1A9",
+          "#FEE9E6"
+        ]
+      },
+      "cinta-negra": {
+        "role": "secondary",
+        "displayName": "Negro de registro",
+        "canonical": "#2B2F37",
+        "oklch": "oklch(30.5% 0.016 264)",
+        "tonalRamp": [
+          "#080B12",
+          "#20242C",
+          "#3C4048",
+          "#595E67",
+          "#797D87",
+          "#9A9FA8",
+          "#C2C7D2",
+          "#E9EFF9"
+        ]
+      },
+      "cinta-gris": {
+        "role": "secondary",
+        "displayName": "Gris inerte",
+        "canonical": "#6B717C",
+        "oklch": "oklch(54.7% 0.019 263)",
+        "tonalRamp": [
+          "#070B13",
+          "#1F242D",
+          "#3A404A",
+          "#585E68",
+          "#777D89",
+          "#989FAA",
+          "#C1C8D4",
+          "#E8EFFB"
+        ]
+      },
+      "cinta-brillo": {
+        "role": "secondary",
+        "displayName": "Brillo de cinta",
+        "canonical": "#FFFFFF40",
+        "oklch": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#7D7D7D",
+          "#9E9E9E",
+          "#C7C7C7",
+          "#EEEEEE"
+        ],
+        "wpf": "#40FFFFFF",
+        "note": "Blanco al 25 %; WPF usa orden ARGB."
+      },
+      "texto-peligro": {
+        "role": "tertiary",
+        "displayName": "Rojo de peligro",
+        "canonical": "#B42318",
+        "oklch": "oklch(50.0% 0.182 30)",
+        "tonalRamp": [
+          "#220000",
+          "#4C0000",
+          "#7E0000",
+          "#AD1A10",
+          "#D44536",
+          "#FB6957",
+          "#FEB1A4",
+          "#FFE9E5"
+        ]
+      },
+      "lavado-peligro": {
+        "role": "tertiary",
+        "displayName": "Lavado de peligro",
+        "canonical": "#FDECEC",
+        "oklch": "oklch(95.7% 0.018 17)",
+        "tonalRamp": [
+          "#120808",
+          "#2C2121",
+          "#493C3C",
+          "#685A5A",
+          "#887979",
+          "#AA9A9A",
+          "#D3C3C3",
+          "#FBEAEA"
+        ]
+      },
+      "texto-aviso": {
+        "role": "tertiary",
+        "displayName": "Ámbar de aviso",
+        "canonical": "#9A6700",
+        "oklch": "oklch(55.4% 0.117 75)",
+        "tonalRamp": [
+          "#160700",
+          "#331F00",
+          "#573902",
+          "#7E5406",
+          "#A57218",
+          "#C99342",
+          "#F4BC6C",
+          "#FFEBD2"
+        ]
+      },
+      "aviso-fondo": {
+        "role": "tertiary",
+        "displayName": "Franja de aviso",
+        "canonical": "#FFF6DD",
+        "oklch": "oklch(97.4% 0.034 91)",
+        "tonalRamp": [
+          "#110A00",
+          "#2A2310",
+          "#473F2B",
+          "#655D48",
+          "#857D66",
+          "#A69E87",
+          "#D0C7AF",
+          "#F7EED5"
+        ]
+      },
+      "aviso-trazo": {
+        "role": "tertiary",
+        "displayName": "Trazo de aviso",
+        "canonical": "#D29922",
+        "oklch": "oklch(72.0% 0.140 80)",
+        "tonalRamp": [
+          "#140800",
+          "#322000",
+          "#553A00",
+          "#7B5600",
+          "#A2740E",
+          "#CC9316",
+          "#F7BC50",
+          "#FEECCE"
+        ]
+      },
+      "aviso-tinta": {
+        "role": "tertiary",
+        "displayName": "Tinta de aviso",
+        "canonical": "#5C4400",
+        "oklch": "oklch(40.2% 0.082 86)",
+        "tonalRamp": [
+          "#140900",
+          "#302200",
+          "#523C00",
+          "#725A1F",
+          "#937A40",
+          "#B69B61",
+          "#DFC489",
+          "#FFEDC6"
+        ]
+      },
+      "grafito-riel": {
+        "role": "neutral",
+        "displayName": "Grafito de riel",
+        "canonical": "#16181D",
+        "oklch": "oklch(20.9% 0.010 268)",
+        "tonalRamp": [
+          "#090B10",
+          "#222429",
+          "#3D4045",
+          "#5B5D64",
+          "#7A7D84",
+          "#9C9EA5",
+          "#C4C7CE",
+          "#EBEEF6"
+        ]
+      },
+      "riel-hover": {
+        "role": "neutral",
+        "displayName": "Riel hover",
+        "canonical": "#22262D",
+        "oklch": "oklch(26.8% 0.014 262)",
+        "tonalRamp": [
+          "#080B11",
+          "#20242B",
+          "#3C4048",
+          "#595E66",
+          "#797D86",
+          "#9A9FA8",
+          "#C2C8D1",
+          "#E9EFF8"
+        ]
+      },
+      "riel-activo": {
+        "role": "neutral",
+        "displayName": "Riel activo",
+        "canonical": "#2B2F37",
+        "oklch": "oklch(30.5% 0.016 264)",
+        "tonalRamp": [
+          "#080B12",
+          "#20242C",
+          "#3C4048",
+          "#595E67",
+          "#797D87",
+          "#9A9FA8",
+          "#C2C7D2",
+          "#E9EFF9"
+        ]
+      },
+      "riel-texto": {
+        "role": "neutral",
+        "displayName": "Texto del riel",
+        "canonical": "#C9CCD3",
+        "oklch": "oklch(84.5% 0.010 267)",
+        "tonalRamp": [
+          "#090B10",
+          "#222429",
+          "#3D4045",
+          "#5B5E64",
+          "#7A7D84",
+          "#9B9EA5",
+          "#C4C7CE",
+          "#EBEEF6"
+        ]
+      },
+      "riel-tenue": {
+        "role": "neutral",
+        "displayName": "Texto tenue del riel",
+        "canonical": "#8A8F99",
+        "oklch": "oklch(64.9% 0.016 264)",
+        "tonalRamp": [
+          "#080B12",
+          "#20242C",
+          "#3B4048",
+          "#595E67",
+          "#787D87",
+          "#999FA9",
+          "#C2C7D2",
+          "#E9EFFA"
+        ]
+      },
+      "riel-trazo": {
+        "role": "neutral",
+        "displayName": "Trazo del interruptor",
+        "canonical": "#6B717C",
+        "oklch": "oklch(54.7% 0.019 263)",
+        "tonalRamp": [
+          "#070B13",
+          "#1F242D",
+          "#3A404A",
+          "#585E68",
+          "#777D89",
+          "#989FAA",
+          "#C1C8D4",
+          "#E8EFFB"
+        ]
+      },
+      "carcasa": {
+        "role": "neutral",
+        "displayName": "Gris de carcasa",
+        "canonical": "#E9EBEE",
+        "oklch": "oklch(93.9% 0.005 258)",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#232426",
+          "#3E4042",
+          "#5C5E60",
+          "#7C7D80",
+          "#9D9EA1",
+          "#C5C7CA",
+          "#EDEFF2"
+        ]
+      },
+      "superficie": {
+        "role": "neutral",
+        "displayName": "Blanco de ficha",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#7D7D7D",
+          "#9E9E9E",
+          "#C7C7C7",
+          "#EEEEEE"
+        ]
+      },
+      "trazo-superficie": {
+        "role": "neutral",
+        "displayName": "Trazo de ficha",
+        "canonical": "#D5D8DE",
+        "oklch": "oklch(88.2% 0.009 265)",
+        "tonalRamp": [
+          "#090B0F",
+          "#222428",
+          "#3D4045",
+          "#5B5E63",
+          "#7B7D83",
+          "#9C9EA4",
+          "#C4C7CD",
+          "#EBEEF5"
+        ]
+      },
+      "divisor": {
+        "role": "neutral",
+        "displayName": "Divisor de fila",
+        "canonical": "#ECEEF1",
+        "oklch": "oklch(94.8% 0.005 258)",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#232426",
+          "#3E4042",
+          "#5C5E60",
+          "#7C7D80",
+          "#9D9EA1",
+          "#C5C7CA",
+          "#EDEFF2"
+        ]
+      },
+      "lavado-hover": {
+        "role": "neutral",
+        "displayName": "Lavado hover",
+        "canonical": "#F1F3F5",
+        "oklch": "oklch(96.3% 0.003 248)",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#232426",
+          "#3E4041",
+          "#5C5E5F",
+          "#7C7D7F",
+          "#9D9FA0",
+          "#C5C7C9",
+          "#EDEFF1"
+        ]
+      },
+      "lavado-pulsado": {
+        "role": "neutral",
+        "displayName": "Lavado pulsado",
+        "canonical": "#E4E7EB",
+        "oklch": "oklch(92.7% 0.006 255)",
+        "tonalRamp": [
+          "#090B0E",
+          "#222427",
+          "#3E4043",
+          "#5B5E61",
+          "#7B7D81",
+          "#9C9FA2",
+          "#C5C7CB",
+          "#ECEFF3"
+        ]
+      },
+      "tinta": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "#16181D",
+        "oklch": "oklch(20.9% 0.010 268)",
+        "tonalRamp": [
+          "#090B10",
+          "#222429",
+          "#3D4045",
+          "#5B5D64",
+          "#7A7D84",
+          "#9C9EA5",
+          "#C4C7CE",
+          "#EBEEF6"
+        ]
+      },
+      "tinta-secundaria": {
+        "role": "neutral",
+        "displayName": "Tinta secundaria",
+        "canonical": "#565C67",
+        "oklch": "oklch(47.3% 0.019 263)",
+        "tonalRamp": [
+          "#070B13",
+          "#1F242E",
+          "#3A404A",
+          "#585E69",
+          "#777E89",
+          "#989FAB",
+          "#C1C8D4",
+          "#E8EFFC"
+        ]
+      },
+      "tinta-deshabilitada": {
+        "role": "neutral",
+        "displayName": "Tinta deshabilitada",
+        "canonical": "#5B616B",
+        "oklch": "oklch(49.1% 0.018 261)",
+        "tonalRamp": [
+          "#070B13",
+          "#1F242D",
+          "#3A4049",
+          "#585E68",
+          "#777E88",
+          "#989FAA",
+          "#C1C8D3",
+          "#E8EFFB"
+        ]
+      },
+      "tinta-no-aplica": {
+        "role": "neutral",
+        "displayName": "Tinta no aplica",
+        "canonical": "#6B717C",
+        "oklch": "oklch(54.7% 0.019 263)",
+        "tonalRamp": [
+          "#070B13",
+          "#1F242D",
+          "#3A404A",
+          "#585E68",
+          "#777D89",
+          "#989FAA",
+          "#C1C8D4",
+          "#E8EFFB"
+        ]
+      },
+      "trazo-boton": {
+        "role": "neutral",
+        "displayName": "Trazo de botón",
+        "canonical": "#A9AEB8",
+        "oklch": "oklch(75.0% 0.015 264)",
+        "tonalRamp": [
+          "#080B12",
+          "#20242C",
+          "#3C4048",
+          "#595E67",
+          "#797D87",
+          "#9A9EA8",
+          "#C2C7D2",
+          "#E9EFF9"
+        ]
+      },
+      "trazo-control": {
+        "role": "neutral",
+        "displayName": "Trazo de control",
+        "canonical": "#7D828C",
+        "oklch": "oklch(60.6% 0.016 264)",
+        "tonalRamp": [
+          "#080B12",
+          "#20242C",
+          "#3B4049",
+          "#595E67",
+          "#787D87",
+          "#999FA9",
+          "#C2C7D2",
+          "#E9EFFA"
+        ]
+      },
+      "pulgar-scroll": {
+        "role": "neutral",
+        "displayName": "Pulgar de desplazamiento",
+        "canonical": "#9EA4AE",
+        "oklch": "oklch(71.7% 0.016 261)",
+        "tonalRamp": [
+          "#070B12",
+          "#20242C",
+          "#3B4048",
+          "#585E67",
+          "#787E87",
+          "#999FA9",
+          "#C1C8D2",
+          "#E8EFFA"
+        ]
+      },
+      "registro-fondo": {
+        "role": "neutral",
+        "displayName": "Grafito de registro",
+        "canonical": "#1C1F25",
+        "oklch": "oklch(23.9% 0.012 264)",
+        "tonalRamp": [
+          "#090B10",
+          "#21242A",
+          "#3C4046",
+          "#5A5E65",
+          "#797D85",
+          "#9A9EA6",
+          "#C3C7D0",
+          "#EAEFF7"
+        ]
+      },
+      "registro-texto": {
+        "role": "neutral",
+        "displayName": "Texto del registro",
+        "canonical": "#C9CCD3",
+        "oklch": "oklch(84.5% 0.010 267)",
+        "tonalRamp": [
+          "#090B10",
+          "#222429",
+          "#3D4045",
+          "#5B5E64",
+          "#7A7D84",
+          "#9B9EA5",
+          "#C4C7CE",
+          "#EBEEF6"
+        ]
+      },
+      "registro-claro": {
+        "role": "neutral",
+        "displayName": "Título de tarea",
+        "canonical": "#F0F3F6",
+        "oklch": "oklch(96.3% 0.005 248)",
+        "tonalRamp": [
+          "#090B0D",
+          "#222426",
+          "#3E4042",
+          "#5B5E60",
+          "#7B7E80",
+          "#9C9FA1",
+          "#C5C8CA",
+          "#ECEFF2"
+        ]
+      },
+      "registro-estado": {
+        "role": "neutral",
+        "displayName": "Estado de tarea",
+        "canonical": "#A9AEB8",
+        "oklch": "oklch(75.0% 0.015 264)",
+        "tonalRamp": [
+          "#080B12",
+          "#20242C",
+          "#3C4048",
+          "#595E67",
+          "#797D87",
+          "#9A9EA8",
+          "#C2C7D2",
+          "#E9EFF9"
+        ]
+      },
+      "registro-tenue": {
+        "role": "neutral",
+        "displayName": "Ruta de respaldo",
+        "canonical": "#8A8F99",
+        "oklch": "oklch(64.9% 0.016 264)",
+        "tonalRamp": [
+          "#080B12",
+          "#20242C",
+          "#3B4048",
+          "#595E67",
+          "#787D87",
+          "#999FA9",
+          "#C2C7D2",
+          "#E9EFFA"
+        ]
+      },
+      "registro-verde": {
+        "role": "log",
+        "displayName": "Registro verde (éxito)",
+        "canonical": "#56D364",
+        "oklch": "oklch(77.2% 0.188 145)",
+        "tonalRamp": [
+          "#001100",
+          "#002E06",
+          "#014E13",
+          "#067220",
+          "#1A9633",
+          "#3BBB4D",
+          "#6BE677",
+          "#CDFECE"
+        ]
+      },
+      "registro-amarillo": {
+        "role": "log",
+        "displayName": "Registro amarillo (aviso)",
+        "canonical": "#E3B341",
+        "oklch": "oklch(79.0% 0.139 85)",
+        "tonalRamp": [
+          "#130900",
+          "#302100",
+          "#523C00",
+          "#775800",
+          "#9D770E",
+          "#C59616",
+          "#F0C050",
+          "#FEEDC8"
+        ]
+      },
+      "registro-rojo": {
+        "role": "log",
+        "displayName": "Registro rojo (error)",
+        "canonical": "#FF7B72",
+        "oklch": "oklch(73.4% 0.163 26)",
+        "tonalRamp": [
+          "#210000",
+          "#4C0004",
+          "#7C010D",
+          "#A62828",
+          "#CC4D48",
+          "#F37068",
+          "#FDB1A9",
+          "#FEE9E6"
+        ]
+      },
+      "registro-cian": {
+        "role": "log",
+        "displayName": "Registro cian (simulación)",
+        "canonical": "#79C0FF",
+        "oklch": "oklch(78.6% 0.115 247)",
+        "tonalRamp": [
+          "#000C20",
+          "#002643",
+          "#004270",
+          "#15629A",
+          "#3C82BE",
+          "#5EA5E2",
+          "#97CDFF",
+          "#E2F0FE"
+        ]
+      },
+      "registro-azul": {
+        "role": "log",
+        "displayName": "Registro azul (DarkCyan)",
+        "canonical": "#58A6FF",
+        "oklch": "oklch(71.5% 0.152 253)",
+        "tonalRamp": [
+          "#000926",
+          "#00234B",
+          "#074077",
+          "#115EA9",
+          "#2F7FD4",
+          "#53A1FA",
+          "#A1CBFE",
+          "#E4F0FF"
+        ]
+      },
+      "registro-ambar": {
+        "role": "log",
+        "displayName": "Registro ámbar (DarkYellow)",
+        "canonical": "#D29922",
+        "oklch": "oklch(72.0% 0.140 80)",
+        "tonalRamp": [
+          "#140800",
+          "#322000",
+          "#553A00",
+          "#7B5600",
+          "#A2740E",
+          "#CC9316",
+          "#F7BC50",
+          "#FEECCE"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Título de página, uno por página."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Línea bajo el título de página, en tinta secundaria."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Nombre de preset y título del detalle de un ajuste."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Encabezados dentro de fichas y entre bloques."
+      },
+      "category": {
+        "displayName": "Category",
+        "purpose": "Grupos de la lista de ajustes, en tinta secundaria."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto de fila y tamaño base de la ventana."
+      },
+      "body-strong": {
+        "displayName": "Body Strong",
+        "purpose": "Valor «Ahora», títulos de fila y botones."
+      },
+      "body-secondary": {
+        "displayName": "Body Secondary",
+        "purpose": "Descripciones de preset, acción y ajuste."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Texto secundario de fila, metadatos de preset y estado de tarea."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Cabeceras de tabla, contadores, versión y notas."
+      },
+      "numeric": {
+        "displayName": "Numeric",
+        "purpose": "Cualquier cifra comparada o contada (NumeralAlignment=Tabular en WPF)."
+      },
+      "tape-label": {
+        "displayName": "Tape Label",
+        "purpose": "Cintas de estado y riesgo en listas y detalle; mayúsculas con U+200A."
+      },
+      "tape-label-panel": {
+        "displayName": "Tape Label Panel",
+        "purpose": "Cintas de la ficha del equipo y del estado de Windows Update."
+      },
+      "tape-brand": {
+        "displayName": "Tape Brand",
+        "purpose": "Solo la marca WINTURBO del riel."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Registro de actividad."
+      },
+      "icon": {
+        "displayName": "Icon",
+        "purpose": "Un icono por entrada del riel."
+      }
+    },
+    "tapeStateMap": {
+      "_rule": "Una cinta solo marca estado o riesgo, nunca decora; un color por estado y siempre con la palabra.",
+      "cinta-verde": [
+        "Seguro",
+        "Aplicado",
+        "Activo",
+        "Más rápido"
+      ],
+      "cinta-ambar": [
+        "Moderado",
+        "Parcial"
+      ],
+      "cinta-roja": [
+        "Avanzado",
+        "Bloqueado",
+        "Sin deshacer"
+      ],
+      "cinta-negra": [
+        "Número de respaldo (#0001 · etiqueta)",
+        "Reiniciar"
+      ],
+      "cinta-gris": [
+        "Deshecho",
+        "Sin datos",
+        "No existe"
+      ],
+      "azul-senal": [
+        "Modo simulación",
+        "Marca WINTURBO (única cinta de identidad)"
+      ]
+    },
+    "shadows": [
+      {
+        "name": "none",
+        "value": "none",
+        "purpose": "Sistema plano: la profundidad se da por tono y trazo de 1 px."
+      },
+      {
+        "name": "tape-highlight",
+        "value": "inset 0 1px 0 rgba(255,255,255,0.25)",
+        "purpose": "Brillo superior de 1 px de cada cinta (BorderThickness 0,1,0,0 en #40FFFFFF)."
+      },
+      {
+        "name": "focus-ring",
+        "value": "0 0 0 2px #1F6FEB, offset 3px, radius 8px",
+        "purpose": "Foco de teclado de botones."
+      },
+      {
+        "name": "focus-check",
+        "value": "border 2.5px #0B3D91",
+        "purpose": "Foco de teclado de casilla y radio."
+      }
+    ],
+    "motion": [
+      {
+        "name": "none",
+        "value": "instantáneo",
+        "purpose": "Los cambios de estado de WPF (hover, pulsado, marcado) son inmediatos; no hay animaciones en el sistema."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "ventana-minima",
+        "value": "960x560"
+      },
+      {
+        "name": "ventana-por-defecto",
+        "value": "1360x860 (recortada al área de trabajo − 24 px)"
+      },
+      {
+        "name": "ajustes-columna-estrecha",
+        "value": "ancho < 1200px → columna lateral 260px (si no, 320px)"
+      },
+      {
+        "name": "registro-bajo",
+        "value": "alto < 720px → registro desplegado 112px (si no, 150px; 64px en reposo)"
+      }
+    ],
+    "layout": {
+      "rail": "232px",
+      "pageHeader": "32px 24px 16px",
+      "pageBody": "0 32px 28px",
+      "columnGutter": "20px",
+      "presetGutter": "12px",
+      "tapeGap": "6px",
+      "sectionBefore": "24px",
+      "sectionAfter": "10px",
+      "mirrorColumns": "* 110 2 110 80",
+      "logJobColumn": "340px"
+    },
+    "wpf": {
+      "tapeLetterSpacing": "U+200A (hair space) entre caracteres, porque WPF no tiene letter-spacing; AutomationProperties.Name conserva el texto original.",
+      "tabularNumerals": "Typography.NumeralAlignment = Tabular",
+      "iconFont": "Segoe Fluent Icons, Segoe MDL2 Assets",
+      "rendering": "UseLayoutRounding=True, SnapsToDevicePixels=True"
+    }
+  },
+  "components": [
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Una acción principal por página, la última del grupo a la derecha del título.",
+      "html": "<button class=\"ds-btn-primary\">Optimizar · Equilibrado</button>",
+      "css": ".ds-btn-primary{font-family:'Segoe UI',sans-serif;font-size:14px;font-weight:600;color:#FFFFFF;background:#1F6FEB;border:1px solid #1F6FEB;border-radius:6px;padding:7px 14px;cursor:pointer;outline:none}.ds-btn-primary:hover{background:#1A5FCC;border-color:#1A5FCC}.ds-btn-primary:active{background:#164FA8;border-color:#164FA8}.ds-btn-primary:focus-visible{box-shadow:0 0 0 1px #E9EBEE,0 0 0 3px #1F6FEB}.ds-btn-primary:disabled{background:#E9EBEE;color:#5B616B;border-color:#D5D8DE;cursor:default}"
+    },
+    {
+      "name": "Botón secundario",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Botón por defecto: blanco con trazo gris.",
+      "html": "<button class=\"ds-btn\">Guardar informe</button>",
+      "css": ".ds-btn{font-family:'Segoe UI',sans-serif;font-size:14px;font-weight:600;color:#16181D;background:#FFFFFF;border:1px solid #A9AEB8;border-radius:6px;padding:7px 14px;cursor:pointer;outline:none}.ds-btn:hover{background:#F1F3F5}.ds-btn:active{background:#E4E7EB}.ds-btn:focus-visible{box-shadow:0 0 0 1px #E9EBEE,0 0 0 3px #1F6FEB}.ds-btn:disabled{background:#F1F3F5;color:#5B616B;border-color:#D5D8DE}"
+    },
+    {
+      "name": "Botón de peligro",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Acción destructiva: blanco con letra y trazo rojos, nunca relleno rojo.",
+      "html": "<button class=\"ds-btn-danger\">Desactivar todo</button>",
+      "css": ".ds-btn-danger{font-family:'Segoe UI',sans-serif;font-size:14px;font-weight:600;color:#B42318;background:#FFFFFF;border:1px solid #C42B2B;border-radius:6px;padding:7px 14px;cursor:pointer;outline:none}.ds-btn-danger:hover{background:#FDECEC}.ds-btn-danger:focus-visible{box-shadow:0 0 0 1px #E9EBEE,0 0 0 3px #1F6FEB}"
+    },
+    {
+      "name": "Cintas de estado",
+      "kind": "custom",
+      "refersTo": "tape-green",
+      "description": "La firma: marca estado o riesgo, nunca decora. Un color por estado y siempre con la palabra.",
+      "html": "<div class=\"ds-tapes\"><span class=\"ds-tape ds-tape-black\">#0001 · Preset Equilibrado</span><span class=\"ds-tape ds-tape-green\">Aplicado</span><span class=\"ds-tape ds-tape-green\">Seguro</span><span class=\"ds-tape ds-tape-amber\">Moderado</span><span class=\"ds-tape ds-tape-red\">Avanzado</span><span class=\"ds-tape ds-tape-grey\">Deshecho</span><span class=\"ds-tape ds-tape-blue\">Modo simulación · no se cambiará nada</span></div>",
+      "css": ".ds-tapes{display:flex;flex-wrap:wrap;gap:6px;padding:16px;background:#FFFFFF}.ds-tape{font-family:'Bahnschrift SemiBold Condensed','Bahnschrift','Segoe UI',sans-serif;font-stretch:condensed;font-weight:600;text-transform:uppercase;letter-spacing:0.09em;font-size:11px;line-height:1.3;color:#FFFFFF;border-top:1px solid rgba(255,255,255,0.25);border-radius:2px;padding:2px 7px}.ds-tape-green{background:#1A7F37}.ds-tape-amber{background:#D29922;color:#16181D}.ds-tape-red{background:#C42B2B}.ds-tape-black{background:#2B2F37}.ds-tape-grey{background:#6B717C}.ds-tape-blue{background:#1F6FEB}"
+    },
+    {
+      "name": "Riel de navegación",
+      "kind": "nav",
+      "refersTo": "nav-item",
+      "description": "Riel grafito de 232 px: entrada activa con píldora azul, contadores tabulares y el interruptor de simulación al pie.",
+      "html": "<nav class=\"ds-rail\"><span class=\"ds-tape ds-brand\">WinTurbo</span><a class=\"ds-nav ds-nav-on\" href=\"#\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"><path d=\"M2 7.5 8 2.5l6 5V14H10V10H6v4H2z\"/></svg><span>Panel</span><b></b></a><a class=\"ds-nav\" href=\"#\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"><circle cx=\"8\" cy=\"8\" r=\"2.5\"/><circle cx=\"8\" cy=\"8\" r=\"6\"/></svg><span>Ajustes</span><b>15/36</b></a><label class=\"ds-switch\"><span>Modo simulación</span><input type=\"checkbox\"><i></i></label></nav>",
+      "css": ".ds-rail{font-family:'Segoe UI',sans-serif;width:232px;box-sizing:border-box;background:#16181D;padding:20px 12px 14px;display:flex;flex-direction:column;gap:2px}.ds-brand{font-family:'Bahnschrift SemiBold Condensed','Bahnschrift','Segoe UI',sans-serif;font-stretch:condensed;font-weight:600;text-transform:uppercase;letter-spacing:0.09em;font-size:15px;color:#FFFFFF;background:#1F6FEB;border-top:1px solid rgba(255,255,255,0.25);border-radius:2px;padding:4px 10px;align-self:flex-start;margin:0 0 24px 8px}.ds-nav{position:relative;display:grid;grid-template-columns:28px 1fr auto;align-items:center;padding:8px 10px 8px 14px;border-radius:6px;border:1px solid transparent;color:#C9CCD3;font-size:14px;text-decoration:none;outline:none}.ds-nav b{font-weight:400;font-size:12px;color:#8A8F99;font-variant-numeric:tabular-nums}.ds-nav:hover{background:#22262D}.ds-nav-on{background:#2B2F37;color:#FFFFFF}.ds-nav-on::before{content:'';position:absolute;left:8px;top:50%;width:3px;height:16px;margin-top:-8px;border-radius:1.5px;background:#1F6FEB}.ds-nav:focus-visible{border-color:#1F6FEB}.ds-switch{display:flex;justify-content:space-between;align-items:center;color:#C9CCD3;font-size:14px;padding:8px 10px;margin-top:16px;border-top:1px solid #2B2F37;cursor:pointer}.ds-switch input{position:absolute;opacity:0}.ds-switch i{position:relative;width:38px;height:20px;box-sizing:border-box;border-radius:10px;background:#2B2F37;border:1px solid #6B717C}.ds-switch i::after{content:'';position:absolute;top:3px;left:4px;width:12px;height:12px;border-radius:50%;background:#C9CCD3}.ds-switch input:checked+i{background:#1F6FEB;border-color:#1F6FEB}.ds-switch input:checked+i::after{left:20px;background:#FFFFFF}.ds-switch input:focus-visible+i{box-shadow:0 0 0 2px #1F6FEB}"
+    },
+    {
+      "name": "Fila de ajuste con casilla",
+      "kind": "input",
+      "refersTo": "list-row",
+      "description": "Una línea por ajuste: casilla de 18 px, nombre, cinta de estado y cinta de riesgo en columna de 96 px.",
+      "html": "<label class=\"ds-row\"><input type=\"checkbox\" checked><span class=\"ds-row-name\">Telemetría y diagnósticos - Desactivar</span><span class=\"ds-tape ds-t-g\">Aplicado</span><span class=\"ds-risk\"><span class=\"ds-tape ds-t-a\">Moderado</span></span></label>",
+      "css": ".ds-row{font-family:'Segoe UI',sans-serif;display:grid;grid-template-columns:34px 1fr auto 96px;align-items:center;min-height:34px;padding:3px 10px 3px 8px;border-radius:4px;background:#FFFFFF;color:#16181D;font-size:14px;cursor:pointer}.ds-row:hover{background:#F1F3F5}.ds-row:focus-within{background:#E8F0FD}.ds-row input{appearance:none;width:18px;height:18px;margin:0;border:1.5px solid #7D828C;border-radius:3px;background:#FFFFFF;display:grid;place-content:center;outline:none}.ds-row input:hover{border-color:#16181D}.ds-row input:checked{background:#1F6FEB;border-color:#1F6FEB}.ds-row input:checked::after{content:'';width:9px;height:5px;border-left:2.2px solid #FFFFFF;border-bottom:2.2px solid #FFFFFF;transform:translateY(-1px) rotate(-45deg)}.ds-row input:focus-visible{border:2.5px solid #0B3D91}.ds-row-name{padding:4px 10px 4px 0}.ds-risk{text-align:right}.ds-tape{font-family:'Bahnschrift SemiBold Condensed','Bahnschrift','Segoe UI',sans-serif;font-stretch:condensed;font-weight:600;text-transform:uppercase;letter-spacing:0.09em;font-size:11px;color:#FFFFFF;border-top:1px solid rgba(255,255,255,0.25);border-radius:2px;padding:2px 7px;margin-right:10px}.ds-risk .ds-tape{margin:0}.ds-t-g{background:#1A7F37}.ds-t-a{background:#D29922;color:#16181D}"
+    },
+    {
+      "name": "Ficha de preset",
+      "kind": "card",
+      "refersTo": "preset-card",
+      "description": "Ficha blanca con trazo de 1 px; la elegida pasa a trazo azul de 2 px. Muestra ajustes y duración estimada.",
+      "html": "<div class=\"ds-presets\"><div class=\"ds-card\" tabindex=\"0\"><strong>Básico</strong><p>Solo cambios seguros de privacidad y bloatware. Ideal para cualquier PC o equipos de trabajo.</p><div class=\"ds-meta\"><span>9 ajustes</span><span>≈ 2 min</span></div></div><div class=\"ds-card ds-card-on\" tabindex=\"0\"><strong>Equilibrado</strong><p>Recomendado. Privacidad + rendimiento sin perder funciones. Se adapta a portátil/sobremesa.</p><div class=\"ds-meta\"><span>18 ajustes</span><span>≈ 2 min</span></div></div></div>",
+      "css": ".ds-presets{font-family:'Segoe UI',sans-serif;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px;background:#E9EBEE}.ds-card{background:#FFFFFF;border:1px solid #D5D8DE;border-radius:8px;padding:14px 16px;cursor:pointer;color:#16181D;outline:none}.ds-card:hover{border-color:#A9AEB8}.ds-card:focus-visible{box-shadow:0 0 0 2px #1F6FEB}.ds-card-on{border:2px solid #1F6FEB;padding:13px 15px}.ds-card strong{font-size:16px;font-weight:600}.ds-card p{margin:6px 0 10px;font-size:13px;color:#565C67}.ds-meta{display:flex;justify-content:space-between;font-size:12.5px;color:#565C67;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Tabla espejo antes · después",
+      "kind": "custom",
+      "refersTo": "mirror-axis",
+      "description": "Línea base y estado actual alrededor de un eje grafito de 2 px; el cambio con signo y unidad.",
+      "html": "<div class=\"ds-mirror\"><div class=\"ds-mh\"><span>Métrica</span><span>Línea base</span><i></i><span>Ahora</span><span>Cambio</span></div><div class=\"ds-mr\"><span>RAM usada</span><span>80.1 %</span><i></i><b>63.2 %</b><b class=\"ds-up\">−16.9 pts</b></div><div class=\"ds-mr\"><span>Temporales</span><span>180 MB</span><i></i><b>211 MB</b><b class=\"ds-down\">+17 %</b></div></div>",
+      "css": ".ds-mirror{font-family:'Segoe UI',sans-serif;background:#FFFFFF;border:1px solid #D5D8DE;border-radius:8px;padding:16px 20px;color:#16181D;font-size:14px;font-variant-numeric:tabular-nums}.ds-mh,.ds-mr{display:grid;grid-template-columns:1fr 110px 2px 110px 80px;align-items:center}.ds-mh{font-size:12px;color:#565C67;margin-bottom:6px}.ds-mh i{background:none}.ds-mr{min-height:32px;border-bottom:1px solid #ECEEF1}.ds-mr i{align-self:stretch;background:#16181D}.ds-mh>span:nth-child(2),.ds-mr>span:nth-child(2){text-align:right;padding-right:14px}.ds-mr>span:nth-child(2){color:#565C67}.ds-mh>span:nth-child(4),.ds-mr>b:nth-child(4){padding-left:14px}.ds-mh>span:last-child,.ds-mr>b:last-child{text-align:right}.ds-mr b{font-weight:600}.ds-up{color:#1A7F37}.ds-down{color:#9A6700}"
+    },
+    {
+      "name": "Registro de actividad",
+      "kind": "custom",
+      "refersTo": "log-panel",
+      "description": "Franja grafito con Consolas, colores de línea por tipo y columna de tarea con barra de progreso.",
+      "html": "<div class=\"ds-log\"><pre><span class=\"ds-dim\">WinTurbo 1.0.0 · Respaldos en C:\\ProgramData\\WinTurbo\\Respaldos</span>\n<span class=\"ds-cy\">[simulación] Servicio: PcaSvc AutomaticDelayedStart -&gt; Manual</span>\n<span class=\"ds-gr\">+ Se aplicarían: 18   Omitidos: 2   Errores: 0</span></pre><div class=\"ds-job\"><strong>Aplicar preset Equilibrado</strong><div class=\"ds-bar\"><div style=\"width:62%\"></div></div><span>11 de 18 · 0:05</span></div></div>",
+      "css": ".ds-log{display:grid;grid-template-columns:1fr 340px;gap:24px;background:#1C1F25;padding:12px 24px;min-height:126px;box-sizing:border-box}.ds-log pre{margin:0;font-family:Consolas,monospace;font-size:12.5px;color:#C9CCD3;white-space:pre-wrap}.ds-dim{color:#8A8F99}.ds-cy{color:#79C0FF}.ds-gr{color:#56D364}.ds-job{font-family:'Segoe UI',sans-serif;padding-top:2px}.ds-job strong{display:block;color:#F0F3F6;font-size:14px;font-weight:600}.ds-bar{height:6px;margin:10px 0 8px;border-radius:3px;background:#2B2F37;overflow:hidden}.ds-bar div{height:100%;border-radius:3px;background:#1F6FEB}.ds-job span{font-size:12.5px;color:#A9AEB8;font-variant-numeric:tabular-nums}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La cinta rotuladora del técnico",
+    "overview": "WinTurbo se ve como el banco de trabajo de alguien que da soporte a muchos equipos: un riel grafito a la izquierda, una carcasa gris fría y fichas blancas con un trazo de 1 px donde se lee el estado real del PC. Sobre esa base neutra, lo único que lleva color fuerte son las cintas: rectángulos planos de color con letra blanca condensada en mayúsculas, como las que un técnico pega sobre lo que tocó. Una cinta dice qué se aplicó, qué riesgo tiene o en qué estado está algo. Nunca adorna.\n\nLa densidad es de herramienta, no de folleto: una línea por ajuste, filas de 32 a 34 px, cifras tabulares alineadas a la derecha y la tabla espejo antes/después separada por un eje grafito de 2 px. El azul es la voz de la acción (el botón principal, la casilla marcada, el foco, la entrada activa del riel) y de la identidad; el verde, el ámbar y el rojo solo hablan de estado y riesgo. Todo es color plano: sin degradados, sin sombras difusas, sin transparencias decorativas. La profundidad sale del tono (riel y registro oscuros, carcasa gris, fichas blancas) y del trazo.\n\nEs una ventana WPF nativa dentro de un único `.ps1`. Las fuentes son solo de sistema (Segoe UI, Bahnschrift, Consolas, Segoe Fluent Icons) porque el producto se distribuye como un solo archivo sin recursos aparte; esa restricción es parte del mundo, no una carencia que haya que disimular. Se rechaza expresamente el panel de tarjetas Fluent con interruptores azules que comparten todos los optimizadores.",
+    "keyCharacteristics": [
+      "Cintas de estado planas con brillo superior de 1 px como única firma de color.",
+      "Riel grafito de 232 px y registro oscuro con Consolas en la parte inferior.",
+      "Fichas blancas con trazo de 1 px y esquinas de 8 px sobre carcasa gris fría; sin sombras.",
+      "Un color por estado, y cada estado siempre escrito con palabras.",
+      "Cifras tabulares en todo lo que se compara o se cuenta.",
+      "Azul reservado para actuar, enfocar y la identidad."
+    ],
+    "rules": [
+      {
+        "name": "La Regla de la Cinta Que Informa",
+        "body": "Una cinta marca un estado o un riesgo, nunca decora: no se usa para títulos, categorías, contadores ni para dar color a una zona vacía. La única excepción es la marca WINTURBO del riel, que es la identidad del producto.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla de Un Color por Estado",
+        "body": "Cada estado tiene un solo color y cada color de cinta un solo significado: verde Seguro/Aplicado/Activo, ámbar Moderado/Parcial, rojo Avanzado/Bloqueado/Sin deshacer, negro respaldo/Reiniciar, gris Deshecho/Sin datos/No existe, azul Modo simulación. La cinta lleva siempre la palabra; ningún estado depende solo del color.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Azul que Actúa",
+        "body": "El azul señal significa «puedes actuar aquí» o «aquí está el foco». No se usa para riesgo ni para estado salvo la cinta de Modo simulación, que es el estado de la sesión entera.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Color Plano",
+        "body": "Campos de color lisos. Sin degradados, sin sombras difusas y sin variantes de cinta hechas con opacidad.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla de la Cifra Tabular",
+        "body": "Toda cifra que se compara o se cuenta (tabla espejo, contadores del riel, metadatos de preset, tiempos, resumen por categorías) usa numeración tabular y se alinea a la derecha cuando hay columna.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla del Espacio Fino",
+        "body": "WPF no tiene espaciado entre letras: la cinta lo consigue intercalando U+200A entre cada carácter en mayúsculas. El nombre accesible de la cinta conserva el texto original sin esos espacios.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla del Trazo, No de la Sombra",
+        "body": "Una superficie se distingue con trazo de 1 px y cambio de tono; si algo necesita destacar (el preset elegido), su trazo pasa a 2 px de azul señal.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** usar una cinta solo para un estado o un riesgo, con su palabra escrita y el color que le asigna La Regla de Un Color por Estado.",
+      "**Do** escribir las cintas en mayúsculas Bahnschrift SemiBold Condensed con U+200A entre letras, y dejar el texto original como nombre accesible.",
+      "**Do** separar superficies con el trazo de ficha de 1 px y el cambio de tono carcasa → blanco, nunca con sombra.",
+      "**Do** dejar un único botón primario azul por página, el último del grupo de acciones a la derecha del título.",
+      "**Do** usar numeración tabular en toda cifra comparada o contada, alineada a la derecha en columnas.",
+      "**Do** mostrar la duración estimada (`≈ 3 min`) y el número de ajustes junto a cualquier acción que aplique varios cambios.",
+      "**Do** mantener una línea por ajuste con filas de al menos 34 px y dejar que los nombres largos se ajusten en vez de truncarse."
+    ],
+    "donts": [
+      "**Don't** usar una cinta como adorno, título, categoría o contador; la marca WINTURBO del riel es la única cinta de identidad.",
+      "**Don't** construir listas de ajustes como tarjetas con interruptores azules al estilo Fluent: un ajuste es una fila con casilla, y el único interruptor es Modo simulación en el riel.",
+      "**Don't** usar degradados, sombras difusas ni opacidad para crear variantes de color de una cinta.",
+      "**Don't** usar el azul señal para riesgo, ni el verde, el ámbar o el rojo para acciones.",
+      "**Don't** rellenar de rojo un botón destructivo; va en blanco con letra y trazo rojos.",
+      "**Don't** depender solo del color para un estado: la cinta, el signo del cambio o la palabra deben decirlo también.",
+      "**Don't** cargar fuentes, imágenes ni recursos externos: el producto es un único `.ps1` y solo usa fuentes de sistema."
+    ]
+  }
+}

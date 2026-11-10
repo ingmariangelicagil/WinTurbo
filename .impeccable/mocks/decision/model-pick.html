@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>WinTurbo · Analítica</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font-family:"Segoe UI",system-ui,sans-serif;background:#E7EEF3;color:#0F2233;display:grid;grid-template-rows:84px 1fr 150px}
+header{background:#0B3D5C;color:#fff;display:flex;align-items:center;padding:0 32px;gap:40px}
+header b{font-size:20px;letter-spacing:.02em}
+header nav{display:flex;gap:4px;font-size:14px}
+header nav a{padding:8px 12px;border-radius:4px;color:#B7CEDC}header nav a.on{background:#fff;color:#0B3D5C}
+.pt{margin-left:auto;font-size:13px;color:#B7CEDC;text-align:right}
+main{display:grid;grid-template-columns:1fr 360px;gap:22px;padding:24px 32px}
+.sheet{background:#fff;border:1px solid #C9D6DF;border-radius:4px;padding:20px 24px}
+h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#4A6273;margin-bottom:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#4A6273;border-bottom:2px solid #0B3D5C;padding:6px 0}
+td{border-bottom:1px solid #E1E8ED;padding:10px 0}
+.r{text-align:right}.out{color:#C2410C;font-weight:600}.good{color:#15803D;font-weight:600}
+.range{position:relative;height:10px;width:220px;background:#F1F5F8;border-radius:2px}
+.range .ok{position:absolute;top:0;bottom:0;background:#CDE7D6}
+.range .m{position:absolute;top:-3px;width:3px;height:16px;background:#0F2233}
+.range .m.b{background:#9FB2C0}
+.btn{font:600 14px "Segoe UI";padding:10px 16px;border-radius:4px;border:1px solid #0B3D5C;background:#fff;color:#0B3D5C;width:100%;margin-top:10px}
+.btn.p{background:#C2410C;border-color:#C2410C;color:#fff}
+dl{display:grid;grid-template-columns:90px 1fr;row-gap:8px;font-size:14px}dt{color:#4A6273}
+footer{background:#0F2233;color:#B7CEDC;font:13px/1.6 Consolas,monospace;padding:14px 32px}
+</style></head><body>
+<header><b>WinTurbo</b><nav><a class="on">Analítica</a><a>Ajustes</a><a>Bloatware</a><a>Inicio</a><a>Limpieza</a><a>Mantenimiento</a><a>Red</a><a>Update</a><a>Apps</a><a>Deshacer</a></nav>
+<div class="pt">Equipo: LAPTOP-MG7520<br>Windows 11 Home 26H2 · 09/11/2026</div></header>
+<main>
+ <section class="sheet"><h2>Resultados</h2>
+  <table><tr><th>Métrica</th><th class="r">Valor</th><th class="r">Referencia</th><th style="padding-left:30px">Intervalo sano</th><th class="r">Línea base</th></tr>
+  <tr><td>Tiempo de arranque</td><td class="r out">58,4 s</td><td class="r">&lt; 30 s</td><td style="padding-left:30px"><div class="range"><i class="ok" style="left:0;width:40%"></i><i class="m" style="left:78%"></i></div></td><td class="r">—</td></tr>
+  <tr><td>RAM usada en reposo</td><td class="r out">82,7 %</td><td class="r">&lt; 60 %</td><td style="padding-left:30px"><div class="range"><i class="ok" style="left:0;width:60%"></i><i class="m" style="left:82%"></i></div></td><td class="r">—</td></tr>
+  <tr><td>Procesos</td><td class="r out">211</td><td class="r">&lt; 160</td><td style="padding-left:30px"><div class="range"><i class="ok" style="left:0;width:55%"></i><i class="m" style="left:72%"></i></div></td><td class="r">—</td></tr>
+  <tr><td>Apps de inicio activas</td><td class="r">1</td><td class="r">&lt; 6</td><td style="padding-left:30px"><div class="range"><i class="ok" style="left:0;width:60%"></i><i class="m" style="left:10%"></i></div></td><td class="r">—</td></tr>
+  <tr><td>Archivos temporales</td><td class="r">289 MB</td><td class="r">&lt; 1 GB</td><td style="padding-left:30px"><div class="range"><i class="ok" style="left:0;width:50%"></i><i class="m" style="left:14%"></i></div></td><td class="r">—</td></tr>
+  <tr><td>Espacio libre</td><td class="r good">298,9 GB</td><td class="r">&gt; 20 GB</td><td style="padding-left:30px"><div class="range"><i class="ok" style="left:10%;width:90%"></i><i class="m" style="left:88%"></i></div></td><td class="r">—</td></tr>
+  </table>
+ </section>
+ <aside class="sheet"><h2>Paciente</h2>
+  <dl><dt>CPU</dt><dd>Ryzen 5 7520U</dd><dt>RAM</dt><dd>8 GB</dd><dt>Disco</dt><dd>SSD NVMe</dd><dt>Tipo</dt><dd>Portátil</dd></dl>
+  <h2 style="margin-top:22px">Tratamiento</h2>
+  <button class="btn p">Aplicar Equilibrado (18)</button><button class="btn">Elegir otro preset</button><button class="btn">Limpieza recomendada</button>
+ </aside>
+</main>
+<footer>+ Línea base guardada · 3 valores fuera de rango · recomendación: Equilibrado + limpieza</footer>
+</body></html>
